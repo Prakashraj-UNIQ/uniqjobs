@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/uniqjobs/',
+  base: import.meta.env.VITE_BASE_PATH || '/uniqjobs/',
   plugins: [react(),tailwindcss()],
 })
