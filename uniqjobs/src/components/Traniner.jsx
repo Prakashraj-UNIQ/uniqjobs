@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import hussainsir from '../assets/images/Hussainsir.png'
-import dineshsir from '../assets/images/dineshsir.png'
+import dineshsir from '../assets/images/Dineshsir.png'
 import rameshsir from '../assets/images/rameshsir.png'
 import '../components/com.css'
 
