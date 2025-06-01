@@ -1,13 +1,19 @@
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
+import MainLayout from '../src/layouts/MainLayout';
+import Home from './pages/Home';
 
 function App() {
  
 
   return (
-    <>
-      <h1 className=''>Hello World</h1>
-    </>
+    <BrowserRouter basename="/uniqjobs">
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Home />} /> 
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
