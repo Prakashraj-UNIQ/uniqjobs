@@ -1,5 +1,5 @@
 import React from 'react'
-import mainbg from '../assets/images/cta-cover4.jpg' 
+import mainbg from '../assets/images/cta-conver.jpg' 
 import SecondaryButton from '../components/Courses/SecondaryButton'
 const CtaBanner = () => {
   return (
@@ -9,7 +9,7 @@ const CtaBanner = () => {
   <img
     src={mainbg}
     alt="Banner Background"
-    className="absolute inset-0 w-full h-full object-cover z-0 opacity-90"
+    className="absolute inset-0 w-full h-full object-cover object-[center_35%] z-0 opacity-90"
   />
 
   {/* Gradient Overlay */}
