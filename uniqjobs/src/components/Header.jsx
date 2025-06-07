@@ -15,8 +15,8 @@ const Header = () => {
   // }, [location.pathname]); 
   
   return (
-    <div className="flex w-full items-center justify-between border-b border-gray-800 px-6 py-4 lg:px-24 z-1000">
-      <div className="text-2xl   text-black z-1005 font-primary font-bold"><Link to={'/'}>Uniq<span className="text-primary-600">Jobs</span></Link></div>
+    <div className="flex w-full items-center justify-between border-b border-gray-800 px-6 py-4 lg:px-24 z-1000 bg-black">
+      <div className="text-2xl   text-white z-1005 font-primary font-bold"><Link to={'/'}>Uniq<span className="text-primary-600">Jobs</span></Link></div>
       <div className="flex items-center justify-between gap-5 ">
         {/* Berger Menu */}
         <div className="relative block xl:hidden z-1005">
@@ -26,7 +26,7 @@ const Header = () => {
               <span></span>
           </div> */}
         </div>
-        <p className="hidden xl:block text-center text-xl font-primary font-medium tracking-lg ">Empowering Careers <span className="text-primary-600 font-medium">Since 2007</span></p>
+        <p className="hidden xl:block text-white text-center text-xl font-primary font-medium tracking-lg ">Empowering Careers <span className="text-primary-600 font-medium">Since 2007</span></p>
         <div className="hidden lg:block border-gray-800 border-l pl-4">
           <ul className="flex space-x-5 text-black">
             <li><a href="https://www.facebook.com/share/1H6HomtGnP/" target="_blank" className="hover:text-primary-600  transform">

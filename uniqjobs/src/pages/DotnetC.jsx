@@ -208,15 +208,15 @@ const DotnetC = () => {
 
   return (
     <div>
-      <div className="flex justify-center items-center px-20 py-25 gap-4">
-        <div className="w-1/2">
+      <div className="flex flex-col lg:flex-row justify-center items-center px-4 sm:px-10 lg:px-20 py-10 sm:py-15 lg:py-25 gap-4">
+        <div className="w-full lg:w-1/2">
           <BannerLeft
             title="Dotnet Full Stack Development"
             subtitle="Master C#, ASP.NET, ASP.NET Core MVC, HTML, CSS, JavaScript, and SQL Server — everything you need to build modern, enterprise-grade web applications on the Microsoft tech stack."
             counter={[19050, 7010, 400]}
           />
         </div>
-        <div className="w-1/2">
+        <div className="w-full lg:w-1/2">
           <BannerVideo videoId="xZjnLNcNLzU" imageUrl={img} />
         </div>
       </div>

@@ -1600,20 +1600,20 @@ const Courses = () => {
   return (
     <div>
       {/* Banner Section */}
-      <div className="flex justify-center items-center px-20 py-25 gap-4">
-        <div className="w-1/2">
+      <div className="flex-col lg:flex-row flex justify-center items-center px-4 sm:px-10 lg:px-20 py-10 sm:py-15 lg:py-25 gap-4">
+        <div className="w-full lg:w-1/2">
           <BannerLeft
             title="Java Fullstack Development"
             subtitle="Learn Java, Spring Boot, HTML, CSS, JavaScript, React, MySQL, and version control (Git) — everything you need to build modern, scalable web applications."
             counter={[32526, 10203, 1001]}
           />
         </div>
-        <div className="w-1/2">
+        <div className="w-full lg:w-1/2">
           <BannerVideo videoId="m_J0n0lyWL0" imageUrl={img} />
         </div>
       </div>
       {/* Road Map Section */}
-      <div className="bg-white py-4 text-center">
+      <div className="bg-[#f2f2f2] py-4 text-center">
         <h1 className="px-4  text-black text-3xl lg:text-5xl text-center fold-primary font-black">
           From Zero to{" "}
           <span className="text-red-600">Full Stack Hero with 120 Days</span>
@@ -1622,7 +1622,7 @@ const Courses = () => {
           Java Fullstack Development (HARD)
         </p>
       </div>
-      <div className="relative">
+      <div className="relative bg-[#f2f2f2]">
         <div className="relative overflow-hidden px-20 py-10">
           <div className="absolute -top-5 main-wave">
             <svg
@@ -1753,7 +1753,7 @@ const Courses = () => {
           <span className="text-red-600">150</span> Days
         </p>
       </div>
-      <div className="bg-gray-100 py-6 text-center">
+      <div className="bg-white py-6 text-center">
         <h1 className="bg-gradient-to-r from-[#0b090a] to-[#ba181b] bg-clip-text text-transparent text-3xl lg:text-5xl text-center fold-primary font-black">
           Our Java Full Stack Development Syllabus
         </h1>
@@ -1762,12 +1762,14 @@ const Courses = () => {
         </p>
       </div>
       <div
-        className="flex items-center justify-end px-20 bg-gray-100"
+        className="flex items-center justify-end px-4 sm:px-10 lg:px-20 bg-white"
         data-aos="fade-up"
       >
-        <DownloadSyllabus />
       </div>
       <Faq items={moduleData} />
+      <div className="flex items-center justify-center sm:justify-end px-4 sm:px-10 lg:px-20 pb-10 bg-white">
+        <DownloadSyllabus />
+      </div>
     </div>
   );
 };

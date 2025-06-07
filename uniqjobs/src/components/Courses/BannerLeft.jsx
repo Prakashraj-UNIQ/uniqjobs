@@ -6,7 +6,7 @@ const BannerLeft = ({title,subtitle,counter}) => {
   const labels = ["Candidates Trained","Candidates Placed","Enrolled Candidates"]
   return (
     <div>
-      <h1 className="font-primary text-6xl font-bold mb-2">
+      <h1 className="font-primary text-4xl sm:text-6xl font-bold mb-2">
             Become a
             <span className="text-primary-600"> {title}</span>
           </h1>

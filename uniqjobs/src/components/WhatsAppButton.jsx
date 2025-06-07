@@ -7,7 +7,7 @@ const WhatsAppButton = () => {
 
   return (
     <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-      <button  className='flex justify-center items-center bg-gradient-to-r from-[#0b090a] to-[#ba181b]' style={{
+      <button  className='flex justify-center items-center bg-green-600' style={{
         position: 'fixed',
         bottom: '20px',
         right: '20px',

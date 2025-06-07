@@ -2,7 +2,7 @@ const cards = [
   {
     className: "p-8 w-full",
     titleClass:
-      "font-primary font-bold text-2xl mb-4 text-black text-white",
+      "font-primary font-bold text-2xl mb-4  bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-white font-primary",
     title: "100% Placement Within 100 Days",
     desc: "Our placement promise is more than just words. At UNIQ, every program is led by expert trainers with deep domain expertise and industry insight.",
     svg: (
@@ -10,15 +10,15 @@ const cards = [
         width="250px" viewBox="0 0 16.001 16.001" id="target-16px" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="Path_189" data-name="Path 189" d="M45,8a8,8,0,1,1-8-8,.5.5,0,0,1,0,1,7,7,0,1,0,7,7,.5.5,0,0,1,1,0ZM37,4a.5.5,0,0,0,0-1,5,5,0,1,0,5,5,.5.5,0,0,0-1,0,4,4,0,1,1-4-4Zm.671,4.731a1,1,0,0,1-.288.192.991.991,0,0,1-.766,0,1,1,0,0,1-.288-.192c-.011-.01-.025-.013-.036-.024s-.012-.022-.021-.032a.97.97,0,0,1,0-1.35c.009-.01.011-.023.021-.032l1.218-1.218A1.96,1.96,0,0,0,37,6a2.034,2.034,0,1,0,1.926,1.489L37.707,8.707C37.7,8.718,37.682,8.721,37.671,8.731ZM38,5.586V3.5a.5.5,0,0,1,.146-.354l3-3A.5.5,0,0,1,42,.5V2.293l1.146-1.147a.5.5,0,0,1,.708.708L42.707,3H44.5a.5.5,0,0,1,.354.854l-3,3A.5.5,0,0,1,41.5,7H38.707L37.354,8.354a.5.5,0,0,1-.708-.708L38,6.293Zm1-1.879V5.293l2-2V1.707ZM39.707,6h1.586l2-2H41.707Z" transform="translate(-29 0.001)"></path> </g></svg>
     ),
     list: [
-      "Structured training designed for real-world hiring",
-      "100% placement assurance within just 100 days",
-      "90%+ placed in top MNCs like TCS, Accenture & Infosys.",
-    ],
+  "100% job assurance with personalized mentoring",
+  "South India's trusted software training hub",
+  "180+ hiring partners through UNIQ",
+]
   },
   {
     className: "p-8 w-full",
     titleClass:
-      "font-primary font-bold text-2xl mb-4 text-white",
+      "font-primary font-bold text-2xl mb-4 bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-white font-primary",
     title: "Pay After You Get Placed  Placed Placed",
     desc: "We believe in outcomes before income. At UNIQ, you only pay your placement fee after you get a job.",
     svg: (
@@ -69,15 +69,16 @@ const cards = [
       </svg>
     ),
     list: [
-      "Focus on learning, not the pressure, we’ve got your back",
-      "No upfront pay only after placement",
-      "Master skills through projects & mock interviews",
-    ],
+  "Learn stress-free — we've got your back",
+  "Pay only after placement",
+  "Hands-on training with projects & mock interviews",
+]
+
   },
   {
     className: "p-8 w-full",
     titleClass:
-      "font-primary font-bold text-2xl mb-4 text-white",
+      "font-primary font-bold text-2xl mb-4 bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-white font-primary",
     title: "Proven Track Record 25,000+ Careers Launched",
     desc: "With over 25,000 students successfully trained and placed, our track record speaks for itself.",
     svg: (
@@ -109,25 +110,25 @@ const cards = [
      
     ),
     list: [
-      "100% Job Assurance through personalized mentoring",
-      "South India's most trusted software training hub",
-      "180+ hiring partners through UNIQ",
-    ],
+  "Training tailored for real-world hiring",
+  "Guaranteed placement within 100 days",
+  "90%+ placed in TCS, Accenture, Infosys & more",
+]
   },
 ];
 
 const FeatureCard = () => {
   return (
-    <div className=" flex gap-4 px-20 bg-black py-20 text-justify ">
+    <div className=" lg:flex gap-4 px-4 sm:px-10 lg:px-20 bg-black py-20 text-justify ">
       {cards.map((card, idx) => (
         <div
           key={idx}
-          className={`relative bgcm rounded-lg flex flex-col justify-between ${card.className}`}
+          className={`relative mb-2 lg:mb-0 bgcm rounded-lg flex flex-col justify-between ${card.className}`}
         >
-          <div>
+          <div >
             <h2 className={card.titleClass}>{card.title}</h2>
             {card.desc && (
-              <p className="text-white font-secondary font-medium text-lg  mb-10 ">
+              <p className="text-zinc-200 font-secondary font-bold text-lg mb-12">
                 {card.desc}
               </p>
             )}
@@ -135,7 +136,7 @@ const FeatureCard = () => {
           {card.svg}
           {card.list.length > 0 && (
             <div>
-              <ul className="text-white font-secondary text-base">
+              <ul className="text-white font-secondary text-lg font-bold">
                 {card.list.map((item, i) => (
                   <li className="flex items-center" key={i}>
                     <svg

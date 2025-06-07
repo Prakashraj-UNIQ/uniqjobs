@@ -24,50 +24,50 @@ const MobileMenu = ({isNavOpen}) => {
         {mainMenu && (
           <div className="space-y-2">
             <Link to={'/'} >
-              <div className="text-black hover:text-red-600 hover:pl-2 transition-all duration-300 flex items-center py-2">
+              <div className="text-white hover:text-red-600 hover:pl-2 transition-all duration-300 flex items-center py-2">
                 Home
               </div>
             </Link>
 
             <button onClick={() => handleSubMenu("training")} className="w-full text-left">
-              <div className="flex justify-between items-center text-black hover:text-red-600 hover:pl-2 py-2 transition-all duration-300">
+              <div className="flex justify-between items-center text-white hover:text-red-600 hover:pl-2 py-2 transition-all duration-300">
                 <span>Training Courses</span>
                 <ArrowIcon />
               </div>
             </button>
 
             <button onClick={() => handleSubMenu("placements")} className="w-full text-left">
-              <div className="flex justify-between items-center text-black hover:text-red-600 hover:pl-2 py-2 transition-all duration-300">
+              <div className="flex justify-between items-center text-white hover:text-red-600 hover:pl-2 py-2 transition-all duration-300">
                 <span>Placements</span>
                 <ArrowIcon />
               </div>
             </button>
 
             <Link to='UniqVsOther'>
-              <div className="text-black hover:text-red-600 hover:pl-2 transition-all duration-300 flex items-center py-2">
+              <div className="text-white hover:text-red-600 hover:pl-2 transition-all duration-300 flex items-center py-2">
                 Uniq vs Others
               </div>
             </Link>
 
             <button onClick={() => handleSubMenu("facilities")} className="w-full text-left">
-              <div className="flex justify-between items-center text-black hover:text-red-600 py-2 hover:pl-2 transition-all duration-300">
+              <div className="flex justify-between items-center text-white hover:text-red-600 py-2 hover:pl-2 transition-all duration-300">
                 <span>Facilities</span>
                 <ArrowIcon />
               </div>
             </button>
 
             <Link to='successStory'>
-              <div className="text-black hover:text-red-600 hover:pl-2 transition-all duration-300 flex items-center py-2">
+              <div className="text-white hover:text-red-600 hover:pl-2 transition-all duration-300 flex items-center py-2">
                 Our Success Story
               </div>
             </Link>
             <Link to='Profiles'>
-              <div className="text-black hover:text-red-600 hover:pl-2 transition-all duration-300 flex items-center py-2">
+              <div className="text-white hover:text-red-600 hover:pl-2 transition-all duration-300 flex items-center py-2">
                 Trainer's profile
               </div>
             </Link>
             <Link to='aboutus'>
-              <div className="text-black hover:text-red-600 hover:pl-2 transition-all duration-300 flex items-center py-2">
+              <div className="text-white hover:text-red-600 hover:pl-2 transition-all duration-300 flex items-center py-2">
                 Contact
               </div>
             </Link>
@@ -113,7 +113,7 @@ const SubMenu = ({ onBack, items }) => (
       <Link
         key={index}
         to={item.to}
-        className="block text-black hover:text-red-600 hover:pl-2 transition-all duration-300 py-2"
+        className="block text-white hover:text-red-600 hover:pl-2 transition-all duration-300 py-2"
       >
         {item.label}
       </Link>

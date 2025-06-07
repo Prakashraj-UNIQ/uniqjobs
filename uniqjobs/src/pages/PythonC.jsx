@@ -307,15 +307,15 @@ const PythonC = () => {
 
   return (
     <div>
-      <div className="flex justify-center items-center px-20 py-25 gap-4">
-        <div className="w-1/2">
+      <div className="flex flex-col lg:flex-row justify-center items-center px-4 sm:px-12 lg:px-20 py-10 sm:py-15 lg:py-25 gap-4">
+        <div className="w-full sm:w-1/2">
           <BannerLeft
             title="Python Fullstack Development"
             subtitle="Master Python, Django, HTML, CSS, JavaScript, React, MySQL, and version control (Git) — everything you need to develop robust, full-featured web applications."
             counter={[31526, 9103, 950]}
           />
         </div>
-        <div className="w-1/2">
+        <div className="w-full sm:w-1/2">
           <BannerVideo videoId="mfoKzEuExYrQhSPf" imageUrl={img} />
         </div>
       </div>
@@ -330,7 +330,7 @@ const PythonC = () => {
       </div>
       <div className="relative">
         <div className="relative overflow-hidden px-20 py-10">
-          <div className="absolute -top-5 main-wave">
+          <div className="absolute -top-5 main-wave max-w-9xl mx-auto">
             <svg
               className="wave"
               width="100%"
@@ -443,7 +443,7 @@ const PythonC = () => {
               </g>
             </svg>
           </div>
-          <div className="grid grid-cols-3 space-y-25 px-35">
+          <div className="grid grid-cols-3 space-y-25 max-w-9xl mx-auto ">
             {roadmapData.map((item, index) => (
               <RoadmapItem
                 key={index}

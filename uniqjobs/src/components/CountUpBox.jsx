@@ -21,10 +21,10 @@ const CountUpBox = ({ value, label }) => {
 
   return (
     <div className="text-center">
-      <div className="font-primary font-bold text-lg">
+      <div className="font-primary font-bold text-lg ">
         {count.toLocaleString()}+
       </div>
-      <div>{label}</div>
+      <div className="text-zinc-200">{label}</div>
     </div>
   );
 };

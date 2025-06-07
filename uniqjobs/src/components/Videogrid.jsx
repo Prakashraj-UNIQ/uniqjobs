@@ -69,7 +69,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="bg-gray-200 container mx-auto px-20 py-10">
+    <div className="bg-[#F2F2F2] container mx-auto px-4 sm:px-10 lg:px-20 py-10">
       <div className="relative">
         <div className="relative overflow-hidden rounded-lg shadow-xl bg-white">
           <div

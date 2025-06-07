@@ -53,19 +53,19 @@ const AutoAnimatedCards = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex(prev => (prev + 1) % cards.length);
-    }, 5000);
+    }, 10000);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div>
-      <div className="hidden sm:flex justify-center items-center gap-x-6 py-10 px-2 sm:px-10 lg:px-20 bg-gray-200">
+      <div className="hidden sm:flex justify-center items-center gap-x-6 py-10 px-2 sm:px-10 lg:px-20 bg-white">
       {cards.map((card, i) => {
         const isActive = i === activeIndex;
         return (
           <div
             key={i}
-            className={`group relative flex flex-col justify-between transition-all duration-700 ease-in-out  min-w-[280px] h-[480px] p-8 rounded-2xl shadow-lg text-white ${
+            className={`group relative flex flex-col justify-between transition-all duration-700 ease-in-out  min-w-[280px] h-[480px] p-8 rounded-2xl shadow-xl text-white ${
               isActive ? 'w-[700px] bg-gradient-to-r from-[#0b090a] to-[#ba181b]' : 'w-[280px] bg-white'
             }`}
           >
@@ -122,7 +122,7 @@ const AutoAnimatedCards = () => {
     </div>
 
     
-    <div className="flex flex-col sm:hidden  justify-center items-center gap-x-6 py-10 px-2 sm:px-10 lg:px-20 bg-gray-100">
+    <div className="flex flex-col sm:hidden  justify-center items-center gap-x-6 py-10 px-2 sm:px-10 lg:px-20 bg-white">
       {cards.map((card, i) => {
         const isActive = i === activeIndex;
         return (
@@ -163,7 +163,7 @@ const AutoAnimatedCards = () => {
                 {card.points.map((point, idx) => (
                   <div key={idx} className="flex items-center">
                     <div className="flex items-center bg-white/90 font-bold font-primary shadow-xl w-8 h-8 rounded-full z-1">
-                      <h1 className="text-black mx-auto  ">{idx + 1}</h1>
+                      <h1 className="text-black sm:text-sm mx-auto  ">{idx + 1}</h1>
                     </div>
                     <p className="pl-2 font-primary font-medium text-sm text-white">{point}</p>
                   </div>

@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="absolute bottom-10 left-1/2 w-48 h-48 bg-green-500 rounded-full filter blur-3xl animate-float3"></div>
       </div>
 
-      <div className="relative lg:px-24 sm:py-20">
+      <div className="relative py-5 px-2 lg:px-24 sm:py-20">
         <div className="block lg:flex gap-18">
           <div className="group w-full sm:w-[350px] ">
             <div className="flex items-center space-x-2 mb-6">
@@ -639,7 +639,7 @@ const Footer = () => {
             &copy; <span id="year" className="text-red-400"></span> UniqJobs.
             All rights reserved.
           </p>
-          <div className="flex space-x-6">
+          <div className="flex smflex-row flex-col space-x-6">
             <a href="#" className="text-gray-400 hover:text-white transition">
               Privacy Policy
             </a>

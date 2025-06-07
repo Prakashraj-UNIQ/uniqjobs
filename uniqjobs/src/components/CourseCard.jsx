@@ -10,8 +10,8 @@ const CourseCard = ({courseTitle, CourseSalary, courseDescription, icon, courseR
   };
   return (
     // bg-primary-600 bg-[linear-gradient(to_right,_#0b090a,_#ba181b)]
-    <div className="overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl h-full bgc">
-          <div className="relative group flex p-6 opacity-100 transition-opacity duration-300 border-2 border-gray-400 rounded-lg bg-[#f5f3f4]">
+    <div className="overflow-hidden rounded-xl bg-white transition-all duration-300 border-1 border-gray-400 hover:shadow-xl h-full">
+          <div className="relative group flex p-6 opacity-100 transition-opacity duration-300">
             <div className="w-full">
               <h3 className="text-xl text-gray-800  font-primary font-bold mb-1  bg-gradient-to-r from-[#0b090a] to-[#ba181b] bg-clip-text text-transparent">{courseTitle}</h3>
               <div className="text-zinc-600  text-base">Avg Salary : <span className="text-zinc-200 font-bold"></span>{CourseSalary}</div>

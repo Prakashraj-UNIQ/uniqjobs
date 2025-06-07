@@ -1,70 +1,34 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React from 'react';
 
-// Accordion Item Component
-const AccordionItem = ({ title, children, isOpen, onClick }) => {
-  const contentRef = useRef(null);
-
-  useEffect(() => {
-    if (contentRef.current) {
-      contentRef.current.style.maxHeight = isOpen
-        ? `${contentRef.current.scrollHeight}px`
-        : '0px';
-    }
-  }, [isOpen]);
-
+// Accordion Item Component (Static, Full Height)
+const AccordionItem = ({ title, children }) => {
   return (
-    <div className="transition-all duration-700">
+    <div className="flex flex-col border rounded-xl bg-white hover:shadow-2xl transition-all duration-300 h-full">
       {/* Header */}
-      <div
-        className={`accordion-header w-full p-4 text-left cursor-pointer flex items-center justify-between border rounded-xl bg-white hover:shadow-2xl transition-all duration-300 ${
-          isOpen ? 'rounded-b-none border-b-0' : ''
-        }`}
-        onClick={onClick}
-      >
+      <div className="accordion-header p-4 text-left flex items-center justify-between">
         <span className="tracking-wide text-black text-3xl font-bold font-primary">{title}</span>
-        <span className={`arrow transition-transform duration-500 transform ${isOpen ? 'rotate-180' : ''}`}>
-          <svg className="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-          </svg>
-        </span>
       </div>
 
-      {/* Content */}
-      <div
-        ref={contentRef}
-        className="accordion-content overflow-hidden transition-all duration-700 border border-t-0 rounded-b-xl bg-white"
-        style={{
-          maxHeight: isOpen ? `${contentRef.current?.scrollHeight}px` : '0px',
-        }}
-      >
-        <div className="px-6 pb-4 text-gray-800 tracking-wide text-lg font-secondary">
-          {children}
-        </div>
+      {/* Content - always open */}
+      <div className="accordion-content px-6 pb-4 text-gray-800  text-lg  font-secondary flex-1" style={{ wordSpacing: '0.1rem' }}>
+        {children}
       </div>
     </div>
   );
 };
 
-// About Section Component
+// About Section Component bg-[#f5f3f4]
 const AboutSection = () => {
-  const [openIndex, setOpenIndex] = useState(null);
-
-  const handleToggle = (index) => {
-    setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
-  };
-
   return (
-    <section id="aboutUs" className="flex justify-center items-center bg-[#f5f3f4] py-10">
+    <section id="aboutUs" className="flex justify-center items-center bg-white  py-20">
       <div className="w-full px-4 sm:px-8 lg:px-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-800">
           <AccordionItem
             title={
               <span>
-                About <span className="text-red-600">Us</span>
+                Who <span className="text-red-600">We are?</span>
               </span>
             }
-            isOpen={openIndex === 0}
-            onClick={() => handleToggle(0)}
           >
             At UniqJobs, we’re more than a training institute — we’re a launchpad for tech careers.
             Established in 2007 by industry professionals from TCS and powered by UNIQ Technologies,
@@ -78,8 +42,6 @@ const AboutSection = () => {
                 What <span className="text-red-600">We Do?</span>
               </span>
             }
-            isOpen={openIndex === 1}
-            onClick={() => handleToggle(1)}
           >
             We specialize in industry-ready software training programs with 100% placement assurance.
             Our expert-led, practical courses are designed to help freshers, career changers, and working professionals

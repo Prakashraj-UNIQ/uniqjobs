@@ -2,8 +2,8 @@ import { Link } from "react-router-dom"
 
 const Navbar = () => {
   return (
-    <div className="hidden xl:flex w-full justify-center items-center border-gray-800 border-b z-1000">
-     <ul className="flex justify-center items-center gap-x-10 text-black font-primary font-medium text-base">
+    <div className="hidden xl:flex w-full justify-center items-center border-gray-800 border-b z-1000 bg-black">
+     <ul className="flex justify-center items-center gap-x-10 text-white font-primary font-medium text-base">
         <li className="opacity-100 slide-in-left hover:text-primary-600"><Link to={'/'}>Home</Link></li>
         <div className="relative z-1000 py-4 slide-in-left group cursor-pointer hover:text-primary-600" >
           <div className="flex justify-center items-center">

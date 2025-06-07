@@ -37,7 +37,7 @@ export default function ModalVideoSection({videoId, imageUrl}) {
             aria-label="Watch the video"
           >
             <img
-              className="rounded-3xl shadow-2xl transition-shadow duration-300 ease-in-out"
+              className="rounded-xl shadow-2xl transition-shadow duration-300 ease-in-out"
               src={imageUrl}
               width="1400"
               height="700"

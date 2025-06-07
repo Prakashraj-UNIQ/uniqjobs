@@ -130,56 +130,58 @@ export default function VideoGallery() {
 
   return (
     <div className="bg-black py-4">
-      <p className='text-white text-xl font-bold font-primary border-t-2 border-[#444] mx-20 pt-2 '>Placed Candidates Reviews</p>
-      <div className="flex flex-row gap-6 pt-5 px-5 lg:px-20 ">
-      
-      {/* Main Video Player */}
-      <div className=" flex w-full flex-col items-center justify-center">
-        <div className="w-full max-w-5xl mb-4 rounded-lg shadow-lg overflow-hidden">
-          <iframe
-            width="100%"
-            height="500px"
-            src={`https://www.youtube.com/embed/${currentVideo}?autoplay=1&mute=1&rel=0`}
-            title="Selected Video"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-      </div>
+  <p className="text-white text-xl font-bold font-primary border-t-2 border-[#444] mx-4 sm:mx-10 md:mx-20 pt-2">
+    Placed Candidates Reviews
+  </p>
 
-      {/* Thumbnails */}
-      <div className="w-155 overflow-x-auto max-h-[500px] custom-scrollbar">
-        <div className="flex flex-col w-100  space-x-2">
-          {videoList.map((video) => (
-            <div
-              key={video.id}
-              className="group cursor-pointer p-2 min-w-[18rem] md:min-w-[20rem]"
-              onClick={() => setCurrentVideo(video.id)}
-            >
-              <img
-                src={video.thumbnail}
-                alt={video.title}
-                title={video.title}
-                className="w-full h-auto rounded hover:opacity-80 transition"
-              />
-              <h3 className="text-lg font-semibold font-secondary tracking-wide text-white cursor-pointer group-hover:underline">{video.title}</h3>
-              <p className="text-white/90 text-sm mt-1 leading-5">
-                      {video.description}
-              </p>
-              <div className="flex mt-2">
-                      <p className="text-white/60 text-sm mt-1 leading-5 pr-2 border-r-2 border-white/60">
-                        {video.intro}
-                      </p>
-                      <p className="text-white/60 text-sm mt-1 leading-5 pl-2">
-                        {video.branch}
-                      </p>
-                    </div>
-            </div>
-          ))}
-        </div>
+  <div className="flex flex-col lg:flex-row gap-6 pt-5 px-4 sm:px-10 lg:px-20">
+    {/* Main Video Player */}
+    <div className="flex w-full flex-col items-center justify-center">
+      <div className="w-full max-w-5xl mb-4 rounded-lg shadow-lg overflow-hidden">
+        <iframe
+          width="100%"
+          height="300px"
+          className="sm:h-[400px] md:h-[500px]"
+          src={`https://www.youtube.com/embed/${currentVideo}?autoplay=1&mute=1&rel=0`}
+          title="Selected Video"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
       </div>
     </div>
+
+    {/* Thumbnails */}
+    <div className="w-full lg:w-[500px] max-h-[500px] overflow-x-auto lg:overflow-y-auto custom-scrollbar">
+      <div className="flex flex-row lg:flex-col gap-4">
+        {videoList.map((video) => (
+          <div
+            key={video.id}
+            className="group cursor-pointer p-2 min-w-[18rem] md:min-w-[20rem] lg:min-w-0"
+            onClick={() => setCurrentVideo(video.id)}
+          >
+            <img
+              src={video.thumbnail}
+              alt={video.title}
+              title={video.title}
+              className="w-full h-auto rounded hover:opacity-80 transition"
+            />
+            <h3 className="text-lg font-semibold font-secondary tracking-wide text-white group-hover:underline">
+              {video.title}
+            </h3>
+            <p className="text-white/90 text-sm mt-1 leading-5">
+              {video.description}
+            </p>
+            <div className="flex flex-wrap mt-2 text-white/60 text-sm leading-5">
+              <p className="pr-2 border-r border-white/60">{video.intro}</p>
+              <p className="pl-2">{video.branch}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
+  </div>
+</div>
+
   );
 }

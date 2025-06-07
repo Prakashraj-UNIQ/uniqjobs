@@ -54,10 +54,10 @@ export default function VideoCarousel() {
       </div> */}
     
       <div className="w-full px-2 sm:px-8 lg:px-20">
-        <h2 className="text-white text-2xl sm:text-3xl font-primary font-bold text-center mb-2">
+        <h2 className="text-white text-2xl sm:text-2xl font-primary font-bold text-center">
             <span className="text-red-600">{videoData[currentSlide].rank}</span> {videoData[currentSlide].headTitle}
         </h2>
-        <p className="text-gray-400 text-xl font-secondary font-bold text-center mb-4">
+        <p className="text-zinc-200 text-base font-secondary font-bold text-center mb-2">
             {videoData[currentSlide].description}
         </p>
         <div className="carousel-container relative">

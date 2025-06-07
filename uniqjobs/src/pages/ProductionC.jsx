@@ -164,15 +164,15 @@ const ProductionC = () => {
 
   return (
     <div>
-      <div className="flex justify-center items-center px-20 py-25 gap-4">
-        <div className="w-1/2">
+      <div className="flex flex-col lg:flex-row justify-center items-center px-4 sm:px-10 lg:px-20 py-10 sm:py-15 lg:py-25 gap-4">
+        <div className="w-full lg:w-1/2">
           <BannerLeft
             title="Production Support Enginner"
             subtitle="Get hands-on with SQL, Linux, UNIX, Monitoring Tools, and Incident Management to confidently handle real-time issues and ensure seamless system uptime."
             counter={[9050, 3200, 250]}
           />
         </div>
-        <div className="w-1/2">
+        <div className="w-full lg:w-1/2">
           <BannerVideo videoId="xZjnLNcNLzU" imageUrl={img} />
         </div>
       </div>

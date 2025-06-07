@@ -49,7 +49,7 @@ const WhyChoose = () => {
           uniqLines.forEach((_, i) => {
             setTimeout(() => {
               setVisibleLines((prev) => [...prev, i]);
-            }, i * 1000); // adjust delay per line
+            }, i * 1000); 
           });
         }
       },

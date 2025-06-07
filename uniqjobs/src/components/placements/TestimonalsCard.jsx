@@ -35,10 +35,10 @@ const TestimonialCarousel = () => {
   }, [totalCards]);
 
   return (
-    <div className="max-w-[510px]">
+    <div className="hidden xl:block max-w-[510px]">
         
       <div
-        className="flex transition-transform duration-1000 ease-in-out"
+        className="flex transition-transform duration-1000 ease-in-out "
         style={{ transform: `translateX(-${currentIndex * 100}%)`, width: `${100 * totalCards}%` }}
       >
         {cards.map((card, index) => (

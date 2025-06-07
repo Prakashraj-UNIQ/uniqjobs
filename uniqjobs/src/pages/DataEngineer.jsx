@@ -305,15 +305,15 @@ const DataEngineer = () => {
 
   return (
     <div>
-      <div className="flex justify-center items-center px-20 py-25 gap-4">
-        <div className="w-1/2">
+      <div className="flex flex-col lg:flex-row justify-center items-center px-4 sm:px-10 lg:px-20 py-10 sm:py-15 lg:py-25 gap-4">
+        <div className="w-full lg:w-1/2">
           <BannerLeft
             title="Data Engineering"
             subtitle="Learn Python, SQL, Numpy, Pandas, Snowflake — everything you need to build scalable, production-ready data systems."
             counter={[5020, 1009, 96]}
           />
         </div>
-        <div className="w-1/2">
+        <div className="w-full lg:w-1/2">
           <BannerVideo videoId="xZjnLNcNLzU" imageUrl={img} />
         </div>
       </div>
