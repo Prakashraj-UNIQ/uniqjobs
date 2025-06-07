@@ -48,7 +48,7 @@ export default function VideoGallery() {
     </div>
 
     {/* Thumbnails */}
-    <div className="w-full lg:w-[320px] max-h-[500px] overflow-x-auto lg:overflow-y-auto">
+    <div className="w-full lg:w-[500px] max-h-[500px] overflow-x-auto lg:overflow-y-auto">
       <div className="flex flex-row lg:flex-col gap-4">
         {videoList.map((video) => (
           <div

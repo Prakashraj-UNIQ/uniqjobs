@@ -1600,7 +1600,7 @@ const Courses = () => {
   return (
     <div>
       {/* Banner Section */}
-      <div className="flex-col lg:flex-row flex justify-center items-center px-4 sm:px-10 lg:px-20 py-10 sm:py-15 lg:py-25 gap-4">
+      <div className="flex-col lg:flex-row flex justify-center items-center px-4 sm:px-10 lg:px-20 py-10 sm:py-15 lg:py-20 gap-4">
         <div className="w-full lg:w-1/2">
           <BannerLeft
             title="Java Fullstack Development"
@@ -1623,8 +1623,8 @@ const Courses = () => {
         </p>
       </div>
       <div className="relative bg-[#f2f2f2]">
-        <div className="relative overflow-hidden px-20 py-10">
-          <div className="absolute -top-5 main-wave">
+        <div className="relative overflow-hidden max-w-7xl mx-auto py-10">
+          <div className="absolute top-0 main-wave">
             <svg
               className="wave"
               width="100%"
@@ -1650,11 +1650,11 @@ const Courses = () => {
               <path
                 d="
               M50 80
-              L850 80
-              L850 230
+              L890 80
+              L890 230
               L50 230
               L50 380
-              L850 380
+              L890 380
             "
                 stroke="url(#roadmapGradient)"
                 strokeWidth="6"
@@ -1663,7 +1663,7 @@ const Courses = () => {
               />
             </svg>
           </div>
-          <div className="absolute top-8.5 left-23 border-b-4 border-b-[#0b090a]">
+          <div className="absolute top-9 left-0 border-b-4 border-b-[#0b090a]">
             <svg
               width="64px"
               height="64px"
@@ -1689,7 +1689,7 @@ const Courses = () => {
               </g>
             </svg>
           </div>
-          <div className="absolute bottom-48 right-22.5">
+          <div className="absolute bottom-27 right-22.5">
             <svg
               height="64px"
               width="64px"
@@ -1737,7 +1737,7 @@ const Courses = () => {
               </g>
             </svg>
           </div>
-          <div className="grid grid-cols-4 space-y-25 px-35">
+          <div className="grid grid-cols-4 gap-y-6 lg:gap-y-18 px-35">
             {roadmapData.map((item, index) => (
               <RoadmapItem
                 key={index}
@@ -1748,11 +1748,12 @@ const Courses = () => {
             ))}
           </div>
         </div>
-        <p className="absolute bottom-32 right-35 font-primary font-bold text-xl pt-4 text-center lg:text-end">
+        <p className="font-primary font-bold text-xl pb-10 text-center">
           Total: <span className="text-red-600">120</span> Days to{" "}
           <span className="text-red-600">150</span> Days
         </p>
       </div>
+     
       <div className="bg-white py-6 text-center">
         <h1 className="bg-gradient-to-r from-[#0b090a] to-[#ba181b] bg-clip-text text-transparent text-3xl lg:text-5xl text-center fold-primary font-black">
           Our Java Full Stack Development Syllabus

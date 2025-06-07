@@ -17,4 +17,3 @@ const RoadmapItem = ({ title, duration, icon }) => {
 };
 
 export default RoadmapItem;
-  
