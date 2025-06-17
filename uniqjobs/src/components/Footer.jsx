@@ -639,7 +639,7 @@ const Footer = () => {
             &copy; <span id="year" className="text-red-400"></span> UniqJobs.
             All rights reserved.
           </p>
-          <div className="flex smflex-row flex-col space-x-6">
+          <div className="flex sm:flex-row flex-col space-x-6">
             <a href="#" className="text-gray-400 hover:text-white transition">
               Privacy Policy
             </a>

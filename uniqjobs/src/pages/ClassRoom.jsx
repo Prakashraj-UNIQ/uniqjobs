@@ -2,15 +2,17 @@ import React, { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-import class1 from "../assets/images/classrooms/class1.jpg";
-import class2 from "../assets/images/classrooms/class2.jpg";
-import class3 from "../assets/images/classrooms/class3.jpg";
-import class4 from "../assets/images/classrooms/class4.jpg";
-import class5 from "../assets/images/classrooms/class5.png";
-import class6 from "../assets/images/classrooms/class6.jpg";
-import class7 from "../assets/images/classrooms/class7.jpg";
-import class8 from "../assets/images/classrooms/class8.jpg";
-import class9 from "../assets/images/classrooms/class9.jpg";
+import class1 from "../assets/images/classrooms/class1.webp";
+import class2 from "../assets/images/classrooms/class2.webp";
+import class3 from "../assets/images/classrooms/class3.webp";
+import class4 from "../assets/images/classrooms/class4.webp";
+import class5 from "../assets/images/classrooms/class5.webp";
+import class6 from "../assets/images/classrooms/class6.webp";  
+import class7 from "../assets/images/classrooms/class7.webp";
+import class8 from "../assets/images/classrooms/class8.webp";
+import class9 from "../assets/images/classrooms/class9.webp";
+import class10 from "../assets/images/classrooms/class10.webp";
+import class11 from "../assets/images/classrooms/class11.webp";
 
 const images = [
   { src: class1 },
@@ -22,6 +24,8 @@ const images = [
   { src: class7 },
   { src: class8 },
   { src: class9 },
+  { src: class10 },
+  { src: class11 },
 ];
 
 const ClassRoom = () => {

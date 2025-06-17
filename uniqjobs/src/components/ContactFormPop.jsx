@@ -45,7 +45,7 @@ export default function ContactPopup() {
 ></motion.div> */}
           {/* Form Container */}
           <motion.div
-            className="fixed top-0 left-1/2 z-1005 w-full max-w-5xl p-6 bg-white rounded-2xl shadow-lg transform -translate-x-1/2"
+            className="absolute sm:fixed -top-10 left-1/2 z-1005 w-full  max-w-5xl p-6 bg-white rounded-2xl shadow-lg transform -translate-x-1/2"
 initial={{ y: -300, opacity: 0 }}
 animate={{ y: 100, opacity: 1 }}
 exit={{ y: -300, opacity: 0 }}
@@ -53,7 +53,7 @@ exit={{ y: -300, opacity: 0 }}
             <div className="flex justify-center items-center mb-4">
                <h1 className="text-center text-2xl sm:text-4xl lg:text-3xl mb-2 text-black font-primary font-black">
                   Kickstart Your IT Career Today<span className="text-red-600"> Let’s Talk!</span></h1>
-              <button onClick={closeForm} className="absolute  top-5 right-8 text-gray-500 hover:text-gray-700 text-xl"><svg width="24px" height="24px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>cancel</title> <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd"> <g id="work-case" fill="#f00000" transform="translate(91.520000, 91.520000)"> <polygon id="Close" points="328.96 30.2933333 298.666667 1.42108547e-14 164.48 134.4 30.2933333 1.42108547e-14 1.42108547e-14 30.2933333 134.4 164.48 1.42108547e-14 298.666667 30.2933333 328.96 164.48 194.56 298.666667 328.96 328.96 298.666667 194.56 164.48"> </polygon> </g> </g> </g></svg></button>
+              <button onClick={closeForm} className="absolute  top-5 right-3 sm:right-8 text-gray-500 hover:text-gray-700 text-xl"><svg width="24px" height="24px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>cancel</title> <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd"> <g id="work-case" fill="#f00000" transform="translate(91.520000, 91.520000)"> <polygon id="Close" points="328.96 30.2933333 298.666667 1.42108547e-14 164.48 134.4 30.2933333 1.42108547e-14 1.42108547e-14 30.2933333 134.4 164.48 1.42108547e-14 298.666667 30.2933333 328.96 164.48 194.56 298.666667 328.96 328.96 298.666667 194.56 164.48"> </polygon> </g> </g> </g></svg></button>
             </div>
             <form>
   <div className="grid grid-cols-1 lg:grid-cols-2 px-4 lg:px-18 gap-0 lg:gap-8">

@@ -1,6 +1,6 @@
 const RoadmapItem = ({ title, duration, icon }) => {
   return (
-    <div>
+    <div className="z-10">
       <div className="flex flex-col items-center">
       <p className="font-primary font-bold text-lg mb-1">{title}</p>
 

@@ -1525,7 +1525,7 @@ const Courses = () => {
               answers: ["Testing REST endpoints with MockMvc"],
             },
           ],
-        },
+        }, 
       ],
     },
     {
@@ -1626,7 +1626,7 @@ const Courses = () => {
         <div className="relative overflow-hidden max-w-7xl mx-auto py-10">
           <div className="absolute top-0 main-wave">
             <svg
-              className="wave"
+              className="wave -z-9"
               width="100%"
               height="100%"
               viewBox="0 0 900 450"

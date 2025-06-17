@@ -137,7 +137,7 @@ const Banner = () => {
                 <a
                   href="https://www.facebook.com/share/1H6HomtGnP/"
                   target="_blank"
-                  className="hover:text-white  transform"
+                  className="hover:text-white transform"
                 >
                   <svg
                     className="w-8 h-8 fill-black hover:fill-blue-600 transition duration-300 ease-in-out"

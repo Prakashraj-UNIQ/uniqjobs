@@ -123,7 +123,7 @@ const FeatureCard = () => {
       {cards.map((card, idx) => (
         <div
           key={idx}
-          className={`relative mb-2 lg:mb-0 bgcm rounded-lg flex flex-col justify-between ${card.className}`}
+          className={`relative mb-2 lg:mb-0 bgcc rounded-lg flex flex-col justify-between ${card.className}`}
         >
           <div >
             <h2 className={card.titleClass}>{card.title}</h2>
