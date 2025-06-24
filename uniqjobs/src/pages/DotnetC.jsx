@@ -3,8 +3,12 @@ import BannerLeft from "../components/Courses/BannerLeft";
 import BannerVideo from "../components/Courses/BannerVideo";
 import img from "../assets/images/productioncover.jpg";
 import RoadmapItem from "../components/Courses/RoadmapItem";
+import Faq from '../components/Courses/Faq'
+import DownloadSyllabus from '../components/Courses/DownloadSyllabus'
 
 const DotnetC = () => {
+ 
+
   const icons = [
     <svg
       viewBox="0 0 2050 2050"
@@ -357,6 +361,11 @@ const DotnetC = () => {
           Total: <span className="text-red-600">100</span> Days to{" "}
           <span className="text-red-600">130</span> Days
         </p>
+      </div>
+  
+      
+      <div className="flex items-center justify-center sm:justify-end px-4 sm:px-10 lg:px-20 pb-10 bg-white">
+        <DownloadSyllabus />
       </div>
     </div>
   );

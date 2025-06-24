@@ -39,7 +39,8 @@ const ClassRoom = () => {
 
   return (
     <section className="py-10 bg-white">
-      <div className="container mx-auto px-4">
+      {/* container mx-auto px-4 */}
+      <div className="container mx-auto max-w-screen-xl px-4">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold font-primary text-center">
             Our Class Rooms
@@ -55,8 +56,9 @@ const ClassRoom = () => {
             >
               <img
                 src={img.src}
+                loading="lazy"
                 alt={`class-${i}`}
-                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-full object-cover transform transition-transform duration-500 will-change-transform group-hover:scale-105 motion-reduce:transform-none"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                 <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
@@ -72,9 +74,9 @@ const ClassRoom = () => {
 
         <Lightbox
           open={open}
-          close={() => setOpen(false)}
-          index={index}
-          slides={images}
+  close={() => setOpen(false)}
+  index={index}
+  slides={images}
         />
       </div>
     </section>

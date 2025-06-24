@@ -3,8 +3,329 @@ import RoadmapItem from "../components/Courses/RoadmapItem";
 import BannerLeft from "../components/Courses/BannerLeft";
 import BannerVideo from "../components/Courses/BannerVideo";
 import img from "../assets/images/pythoncover.jpg";
+import Faq from "../components/Courses/Faq"
 
 const PythonC = () => {
+
+  const moduleData = [
+  {
+    module: "Module 1: Python Fundamentals",
+    questions: [
+      {
+        question: "Introduction to Python",
+        descriptions: [
+          {
+            description: "Basics",
+            answers: [
+              "History of Python",
+              "Features of Python",
+              "Installing Python",
+              "Python IDEs"
+            ],
+          },
+        ],
+      },
+      {
+        question: "Python Syntax and Semantics",
+        descriptions: [
+          {
+            description: "Core Syntax",
+            answers: [
+              "Variables and Data Types",
+              "Operators in Python",
+              "Comments in Python"
+            ],
+          },
+        ],
+      },
+      {
+        question: "Control Structures",
+        descriptions: [
+          {
+            description: "Flow Control",
+            answers: [
+              "If, Else, Elif Statements",
+              "For Loop",
+              "While Loop",
+              "Break, Continue, Pass"
+            ],
+          },
+        ],
+      },
+      {
+        question: "Functions",
+        descriptions: [
+          {
+            description: "Modular Programming",
+            answers: [
+              "Defining Functions",
+              "Function Arguments",
+              "Return Statement",
+              "Lambda Functions"
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    module: "Module 2: Data Structures and OOP",
+    questions: [
+      {
+        question: "Data Structures",
+        descriptions: [
+          {
+            description: "Built-in Collections",
+            answers: [
+              "Lists",
+              "Tuples",
+              "Sets",
+              "Dictionaries"
+            ],
+          },
+        ],
+      },
+      {
+        question: "Object-Oriented Programming",
+        descriptions: [
+          {
+            description: "OOP Concepts",
+            answers: [
+              "Classes and Objects",
+              "Methods and Attributes",
+              "Inheritance",
+              "Polymorphism",
+              "Encapsulation"
+            ],
+          },
+        ],
+      },
+      {
+        question: "Exception Handling",
+        descriptions: [
+          {
+            description: "Error Handling",
+            answers: [
+              "Try, Except Block",
+              "Finally Clause",
+              "Raising Exceptions"
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    module: "Module 3: Web Development with Django",
+    questions: [
+      {
+        question: "Django Framework Basics",
+        descriptions: [
+          {
+            description: "Setup",
+            answers: [
+              "Installing Django",
+              "Creating Django Project",
+              "Django App Structure"
+            ],
+          },
+        ],
+      },
+      {
+        question: "Django Models and Database",
+        descriptions: [
+          {
+            description: "Database Management",
+            answers: [
+              "Defining Models",
+              "Migrations",
+              "ORM Queries"
+            ],
+          },
+        ],
+      },
+      {
+        question: "Django Views and Templates",
+        descriptions: [
+          {
+            description: "Handling Logic and UI",
+            answers: [
+              "Function Based Views",
+              "Class Based Views",
+              "Templates and Template Tags"
+            ],
+          },
+        ],
+      },
+      {
+        question: "Forms and Validation",
+        descriptions: [
+          {
+            description: "User Input",
+            answers: [
+              "Django Forms",
+              "Form Validation",
+              "Model Forms"
+            ],
+          },
+        ],
+      },
+      {
+        question: "Authentication and Authorization",
+        descriptions: [
+          {
+            description: "User Management",
+            answers: [
+              "User Registration",
+              "Login and Logout",
+              "Permissions"
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    module: "Module 4: Frontend Basics",
+    questions: [
+      {
+        question: "HTML & CSS",
+        descriptions: [
+          {
+            description: "Markup and Styling",
+            answers: [
+              "HTML5 Basics",
+              "CSS3 Fundamentals",
+              "Responsive Design with Bootstrap"
+            ],
+          },
+        ],
+      },
+      {
+        question: "JavaScript Basics",
+        descriptions: [
+          {
+            description: "Scripting",
+            answers: [
+              "JavaScript Syntax",
+              "DOM Manipulation",
+              "Events",
+              "ES6 Features"
+            ],
+          },
+        ],
+      },
+      {
+        question: "ReactJS Introduction",
+        descriptions: [
+          {
+            description: "Frontend Framework",
+            answers: [
+              "Components",
+              "JSX",
+              "State and Props",
+              "Hooks"
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    module: "Module 5: Databases",
+    questions: [
+      {
+        question: "SQL Databases",
+        descriptions: [
+          {
+            description: "Relational Databases",
+            answers: [
+              "CRUD Operations",
+              "Joins",
+              "Indexes"
+            ],
+          },
+        ],
+      },
+      {
+        question: "NoSQL Databases",
+        descriptions: [
+          {
+            description: "MongoDB Basics",
+            answers: [
+              "Documents and Collections",
+              "Queries",
+              "Updates"
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    module: "Module 6: RESTful API Development",
+    questions: [
+      {
+        question: "API Concepts",
+        descriptions: [
+          {
+            description: "REST Fundamentals",
+            answers: [
+              "REST Architecture",
+              "HTTP Methods"
+            ],
+          },
+        ],
+      },
+      {
+        question: "Django REST Framework",
+        descriptions: [
+          {
+            description: "API Development",
+            answers: [
+              "Serializers",
+              "ViewSets",
+              "Routers",
+              "Authentication"
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    module: "Module 7: Testing and Deployment",
+    questions: [
+      {
+        question: "Testing in Python",
+        descriptions: [
+          {
+            description: "Testing Frameworks",
+            answers: [
+              "unittest",
+              "pytest",
+              "Automation"
+            ],
+          },
+        ],
+      },
+      {
+        question: "Deployment",
+        descriptions: [
+          {
+            description: "Deploying Applications",
+            answers: [
+              "Deploy Django Apps",
+              "Docker Containers",
+              "Cloud Services like AWS, Heroku"
+            ],
+          },
+        ],
+      },
+    ],
+  },
+];
+
   const icons = [
     <svg
       viewBox="0 0 2050 2050"
@@ -459,6 +780,15 @@ const PythonC = () => {
           <span className="text-red-600">130</span> Days
         </p>
       </div>
+      <div className="bg-white py-6 text-center">
+        <h1 className="bg-gradient-to-r from-[#0b090a] to-[#ba181b] bg-clip-text text-transparent text-3xl lg:text-5xl text-center fold-primary font-black">
+          Our Python Full Stack Development Syllabus
+        </h1>
+        <p className="font-primary font-medium text-xl text-gray-800 mt-4">
+          (HARD)
+        </p>
+      </div>
+      <Faq items={moduleData}/>
     </div>
   );
 };

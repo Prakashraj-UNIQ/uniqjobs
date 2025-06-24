@@ -17,10 +17,12 @@ import DataEngineer from './pages/DataEngineer';
 import SuccessStory from './pages/SuccessStory'
 import DevopsC from './pages/DevopsC';
 import Question from './pages/Question';
+import ScrollToTop from './components/ScrolltoTop';
 
 const App = () => {
   return (
     <BrowserRouter basename="/uniqjobs">
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Mainlayout />}> 
           <Route index element={<Home />} /> 

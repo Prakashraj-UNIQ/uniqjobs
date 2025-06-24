@@ -1,6 +1,6 @@
 const cards = [
   {
-    className: "p-8 w-full",
+    className: "p-8 w-full ",
     titleClass:
       "font-primary font-bold text-2xl mb-4  bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-white font-primary",
     title: "100% Placement Within 100 Days",
@@ -83,7 +83,7 @@ const cards = [
     desc: "With over 25,000 students successfully trained and placed, our track record speaks for itself.",
     svg: (
       <svg
-        className="absolute -z-9 right-0 bottom-10 opacity-80"
+        className="absolute  -z-9 right-0 bottom-10 opacity-80"
         height="250px"
         width="250px"
         fill="url(#textGradient)"
@@ -123,7 +123,7 @@ const FeatureCard = () => {
       {cards.map((card, idx) => (
         <div
           key={idx}
-          className={`relative mb-2 lg:mb-0 bgcc rounded-lg flex flex-col justify-between ${card.className}`}
+          className={`relative mb-2 lg:mb-0 glass-card  rounded-lg flex flex-col justify-between ${card.className}`}
         >
           <div >
             <h2 className={card.titleClass}>{card.title}</h2>

@@ -3,8 +3,252 @@ import BannerLeft from "../components/Courses/BannerLeft";
 import BannerVideo from "../components/Courses/BannerVideo";
 import img from "../assets/images/productioncover.jpg";
 import RoadmapItem from "../components/Courses/RoadmapItem";
+import Faq from '../components/Courses/Faq'
 
 const ProductionC = () => {
+  const moduleData = [
+  {
+    module: "Module 1: Introduction to Production Support",
+    questions: [
+      {
+        question: "Production Support Overview",
+        descriptions: [
+          {
+            description: "Key Concepts",
+            answers: [
+              "Role and responsibilities of production support",
+              "Difference between development and production support",
+              "Types of production issues"
+            ],
+          },
+        ],
+      },
+      {
+        question: "Incident Management",
+        descriptions: [
+          {
+            description: "Process",
+            answers: [
+              "Incident lifecycle",
+              "Severity and priority classification",
+              "Ticketing tools (e.g., ServiceNow)"
+            ],
+          },
+        ],
+      },
+      {
+        question: "Monitoring and Alerting",
+        descriptions: [
+          {
+            description: "Tools and Techniques",
+            answers: [
+              "Monitoring applications and infrastructure",
+              "Setting up alerts",
+              "Using dashboards"
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    module: "Module 2: Tools and Technologies",
+    questions: [
+      {
+        question: "Operating Systems and Shell Scripting",
+        descriptions: [
+          {
+            description: "Basics",
+            answers: [
+              "Linux commands",
+              "Shell scripting fundamentals",
+              "File and process management"
+            ],
+          },
+        ],
+      },
+      {
+        question: "Database Basics",
+        descriptions: [
+          {
+            description: "SQL and Database Support",
+            answers: [
+              "Basic SQL queries",
+              "Database troubleshooting",
+              "Backup and recovery"
+            ],
+          },
+        ],
+      },
+      {
+        question: "Monitoring Tools",
+        descriptions: [
+          {
+            description: "Popular Tools",
+            answers: [
+              "Nagios",
+              "Splunk",
+              "Grafana",
+              "Prometheus"
+            ],
+          },
+        ],
+      },
+      {
+        question: "Ticketing and Collaboration Tools",
+        descriptions: [
+          {
+            description: "Common Platforms",
+            answers: [
+              "JIRA",
+              "ServiceNow",
+              "Confluence"
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    module: "Module 3: Production Support Processes",
+    questions: [
+      {
+        question: "Incident Handling",
+        descriptions: [
+          {
+            description: "Steps",
+            answers: [
+              "Incident detection",
+              "Root cause analysis",
+              "Resolution and recovery",
+              "Documentation"
+            ],
+          },
+        ],
+      },
+      {
+        question: "Problem Management",
+        descriptions: [
+          {
+            description: "Proactive Approach",
+            answers: [
+              "Identifying recurring incidents",
+              "Permanent fixes",
+              "Change requests"
+            ],
+          },
+        ],
+      },
+      {
+        question: "Change Management",
+        descriptions: [
+          {
+            description: "Managing Changes",
+            answers: [
+              "Change request process",
+              "Approvals",
+              "Rollback procedures"
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    module: "Module 4: Application Support",
+    questions: [
+      {
+        question: "Support for Web Applications",
+        descriptions: [
+          {
+            description: "Common Issues",
+            answers: [
+              "Application crashes",
+              "Performance issues",
+              "Log analysis"
+            ],
+          },
+        ],
+      },
+      {
+        question: "Support for Middleware and Batch Jobs",
+        descriptions: [
+          {
+            description: "Monitoring and Troubleshooting",
+            answers: [
+              "Middleware components",
+              "Job scheduling tools (e.g., Cron, Autosys)",
+              "Failure handling"
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    module: "Module 5: Communication and Documentation",
+    questions: [
+      {
+        question: "Effective Communication",
+        descriptions: [
+          {
+            description: "Best Practices",
+            answers: [
+              "Incident reporting",
+              "Stakeholder communication",
+              "Escalation matrix"
+            ],
+          },
+        ],
+      },
+      {
+        question: "Documentation",
+        descriptions: [
+          {
+            description: "Importance",
+            answers: [
+              "Maintaining knowledge base",
+              "Updating runbooks",
+              "Post-incident reports"
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    module: "Module 6: Career and Soft Skills",
+    questions: [
+      {
+        question: "Team Collaboration",
+        descriptions: [
+          {
+            description: "Working Effectively",
+            answers: [
+              "Agile methodologies",
+              "Cross-team coordination",
+              "Conflict resolution"
+            ],
+          },
+        ],
+      },
+      {
+        question: "Time Management and Prioritization",
+        descriptions: [
+          {
+            description: "Handling Multiple Tasks",
+            answers: [
+              "Prioritizing incidents",
+              "Managing stress",
+              "Meeting SLAs"
+            ],
+          },
+        ],
+      },
+    ],
+  },
+];
+
   const icons = [
     <svg
       viewBox="0 0 2050 2050"
@@ -315,6 +559,16 @@ const ProductionC = () => {
           <span className="text-red-600">130</span> Days
         </p>
       </div>
+      <div className="bg-white py-6 text-center">
+  <h1 className="bg-gradient-to-r from-[#0b090a] to-[#ba181b] bg-clip-text text-transparent text-3xl lg:text-5xl text-center fold-primary font-black">
+    Our Production Support Syllabus
+  </h1>
+  <p className="font-primary font-medium text-xl text-gray-800 mt-4">
+    (ESSENTIAL)
+  </p>
+</div>
+
+      <Faq items={moduleData}/>
     </div>
   );
 };

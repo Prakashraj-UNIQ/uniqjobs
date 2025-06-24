@@ -5,6 +5,7 @@ import { Outlet } from "react-router-dom";
 import WhatsAppButton from "../components/WhatsAppButton";
 import ContactFormPopup from "../components/ContactFormPop";
 import CtaBanner from "../components/CtaBanner";
+import CircleArrowButton from "../components/CircleArrowButton";
 
 const MainLayout = () => {
   return (
@@ -18,6 +19,9 @@ const MainLayout = () => {
       <Footer />
       <ContactFormPopup />
       <WhatsAppButton />
+  
+        <CircleArrowButton />
+    
     </div>
   );
 };

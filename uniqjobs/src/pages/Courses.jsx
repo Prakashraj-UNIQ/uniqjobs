@@ -1762,11 +1762,11 @@ const Courses = () => {
           (HARD)
         </p>
       </div>
-      <div
+      {/* <div
         className="flex items-center justify-end px-4 sm:px-10 lg:px-20 bg-white"
         data-aos="fade-up"
       >
-      </div>
+      </div> */}
       <Faq items={moduleData} />
       <div className="flex items-center justify-center sm:justify-end px-4 sm:px-10 lg:px-20 pb-10 bg-white">
         <DownloadSyllabus />

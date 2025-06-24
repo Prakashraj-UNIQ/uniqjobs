@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState,  } from 'react';
 import { Link } from 'react-router-dom';
 const cards = [
   {
@@ -48,26 +48,30 @@ const cards = [
 ];
 
 const AutoAnimatedCards = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const defaultIndex = 0;
+  const [hoverIndex, setHoverIndex] = useState(null);
+  const activeIndex = hoverIndex !== null ? hoverIndex : defaultIndex;
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex(prev => (prev + 1) % cards.length);
-    }, 10000);
-    return () => clearInterval(interval);
-  }, []);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setActiveIndex(prev => (prev + 1) % cards.length);
+  //   }, 10000);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   return (
     <div>
-      <div className="hidden sm:flex justify-center items-center gap-x-6 py-10 px-2 sm:px-10 lg:px-20 bg-white">
+      <div className="hidden sm:flex justify-center items-center gap-x-6 py-10 px-2 sm:px-10  bg-white">
       {cards.map((card, i) => {
         const isActive = i === activeIndex;
         return (
           <div
+          onMouseEnter={() => setHoverIndex(i)}
+  onMouseLeave={() => setHoverIndex(null)}
             key={i}
             className={`group relative flex flex-col justify-between transition-all duration-700 ease-in-out  min-w-[280px] h-[480px] p-8 rounded-2xl shadow-xl text-white ${
               isActive ? 'w-[700px] bg-gradient-to-r from-[#0b090a] to-[#ba181b]' : 'w-[280px] bg-white'
-            }`}
+            }` }
           >
             <div>
               <span className={`inline-flex justify-center items-center px-3 py-1.5 font-primary  rounded-full text-sm font-semibold mb-4 ${isActive ? 'text-white bg-white/20' : 'text-black bg-black/20'}`}>

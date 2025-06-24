@@ -1,15 +1,16 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
+
 
 const Navbar = () => {
   return (
     <div className="hidden xl:flex w-full justify-center items-center border-gray-800 border-b z-1000 bg-black">
      <ul className="flex justify-center items-center gap-x-10 text-white font-primary font-medium text-base">
-        <li className="opacity-100 slide-in-left hover:text-primary-600"><Link to={'/'}>Home</Link></li>
+        <li className="opacity-100 slide-in-left hover:text-primary-600"><NavLink to={'/'}>Home</NavLink></li>
         <div className="relative z-1000 py-4 slide-in-left group cursor-pointer hover:text-primary-600" >
           <div className="flex justify-center items-center">
             <span>Training Courses</span>
             <svg className="mt-1 transition-transform duration-300 transform group-hover:rotate-180" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"
-              xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#000000">
+              xmlns="http://www.w3.org/2000/svg" xmlnsXNavLink="http://www.w3.org/1999/xNavLink" fill="#000000">
               <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
               <g id="SVGRepo_iconCarrier">
@@ -68,7 +69,7 @@ const Navbar = () => {
                     </g>
                   </g>
                 </svg>
-                <Link to={'Courses'} className="pl-1">Java Full stack development</Link>
+                <NavLink to={'Courses'} className="pl-1">Java Full stack development</NavLink>
               </div>
               <div className="flex  items-center  group hover:text-primary-600">
                 <svg className="w-5 h-5 fill-black group-hover:fill-primary-600" width="64px" height="64px"
@@ -82,11 +83,11 @@ const Navbar = () => {
                     </path>
                   </g>
                 </svg>
-                <Link to={'pythonCourse'} className="pl-2">Python Full stack development</Link>
+                <NavLink to={'pythonCourse'} className="pl-2">Python Full stack development</NavLink>
               </div>
               <div className="flex  items-center  group hover:text-primary-600">
                 <svg className="w-6 h-6 fill-black group-hover:fill-primary-600" width="64px" height="64px" viewBox="0 0 32 32"
-                  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+                  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXNavLink="http://www.w3.org/1999/xNavLink">
                   <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                   <g id="SVGRepo_iconCarrier">
@@ -95,7 +96,7 @@ const Navbar = () => {
                     </path>
                   </g>
                 </svg>
-                <Link to={'DotnetCourse'} className="pl-1">Dotnet Full stack development</Link>
+                <NavLink to={'DotnetCourse'} className="pl-1">Dotnet Full stack development</NavLink>
               </div>
               <div className="flex items-center  group hover:text-primary-600">
                 <svg className="w-6 h-6 fill-black group-hover:fill-primary-600" width="64px" height="64px"
@@ -109,7 +110,7 @@ const Navbar = () => {
                     </path>
                   </g>
                 </svg>
-                <Link to={'DataEngineerCourse'} className="pl-1">Data Engineering</Link>
+                <NavLink to={'DataEngineerCourse'} className="pl-1">Data Engineering</NavLink>
               </div>
               <div className="flex  items-center  group hover:text-primary-600">
                 <svg className="w-5 h-5 fill-black group-hover:fill-primary-600" width="64px" height="64px" viewBox="0 0 24 24"
@@ -122,7 +123,7 @@ const Navbar = () => {
                     </path>
                   </g>
                 </svg>
-                <Link to={'ProductionCourse'} className="pl-2">Production Support</Link>
+                <NavLink to={'ProductionCourse'} className="pl-2">Production Support</NavLink>
               </div>
               <div className="flex  items-center  group hover:text-primary-600">
                 <svg className="w-5 h-5 fill-black group-hover:fill-primary-600" width="64px" height="64px" viewBox="0 0 48 48"
@@ -143,7 +144,7 @@ const Navbar = () => {
                     </g>
                   </g>
                 </svg>
-                <Link to={'devOps'} className="pl-2">DevOps/AWS</Link>
+                <NavLink to={'devOps'} className="pl-2">DevOps/AWS</NavLink>
               </div>
             </div>
           </div>
@@ -153,7 +154,7 @@ const Navbar = () => {
           <div className="flex justify-center items-center">
             <span>Placements</span>
             <svg className="mt-1 transition-transform duration-300 transform group-hover:rotate-180" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"
-              xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#000000">
+              xmlns="http://www.w3.org/2000/svg" xmlnsXNavLink="http://www.w3.org/1999/xNavLink" fill="#000000">
               <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
               <g id="SVGRepo_iconCarrier">
@@ -198,7 +199,7 @@ const Navbar = () => {
                     </g>
                   </g>
                 </svg>
-                <Link to={'studentReview'} className="pl-3">Students Review</Link>
+                <NavLink to={'studentReview'} className="pl-3">Students Review</NavLink>
               </div>
               <div className="flex  items-center group text-black hover:text-primary-600">
                 <svg className="w-6 h-6 fill-black group-hover:fill-primary-600" width="64px" height="64px" viewBox="0 0 64 64"
@@ -209,7 +210,7 @@ const Navbar = () => {
                     strokeMiterlimit: 2,
                   }} version="1.1"
                   xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/"
-                  xmlnsXlink="http://www.w3.org/1999/xlink">
+                  xmlnsXNavLink="http://www.w3.org/1999/xNavLink">
                   <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                   <g id="SVGRepo_iconCarrier">
@@ -220,7 +221,7 @@ const Navbar = () => {
                     </g>
                   </g>
                 </svg>
-                <Link to={'InterviewQuestions'} className="pl-3">Interview Questions</Link>
+                <NavLink to={'InterviewQuestions'} className="pl-3">Interview Questions</NavLink>
               </div>
               <div className="flex  items-center group text-black hover:text-primary-600">
                 <svg className="w-6 h-6 fill-black group-hover:fill-primary-600" width="64px" height="64px"
@@ -236,19 +237,19 @@ const Navbar = () => {
                     </path>
                   </g>
                 </svg>
-                <Link to={'faqQuestions'}  className="pl-3">Faq</Link>
+                <NavLink to={'faqQuestions'}  className="pl-3">Faq</NavLink>
               </div>
             </div>
           </div>
         </div>
 
-        <li className="opacity-100 slide-in-left hover:text-primary-600" ><Link to={'UniqVsOther'}>Uniq vs Others</Link></li>
+        <li className="opacity-100 slide-in-left hover:text-primary-600" ><NavLink to={'UniqVsOther'}>Uniq vs Others</NavLink></li>
        
         <div className="relative z-1000 py-4 slide-in-left group cursor-pointer hover:text-primary-600" >
           <div className="flex justify-center items-center">
             <span>Facilities</span>
             <svg className="mt-1 transition-transform duration-300 transform group-hover:rotate-180" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"
-              xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#000000">
+              xmlns="http://www.w3.org/2000/svg" xmlnsXNavLink="http://www.w3.org/1999/xNavLink" fill="#000000">
               <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
               <g id="SVGRepo_iconCarrier">
@@ -292,7 +293,7 @@ const Navbar = () => {
                     </rect>
                   </g>
                 </svg>
-                <Link to={'classRooms'} className="pl-3 ">Class rooms</Link>
+                <NavLink to={'classRooms'} className="pl-3 ">Class rooms</NavLink>
               </div>
               <div className="flex  items-center group text-black hover:text-primary-600">
                 <svg className="w-6 h-6 fill-black group-hover:fill-primary-600" width="64px" height="64px" viewBox="0 0 24 24"
@@ -323,19 +324,19 @@ const Navbar = () => {
                     </path>
                   </g>
                 </svg>
-                <Link to={'Hostel'} className="pl-3 ">Hostel Facilities</Link>
+                <NavLink to={'Hostel'} className="pl-3 ">Hostel Facilities</NavLink>
               </div>
             </div>
           </div>
         </div>
 
-        <li className="opacity-100 slide-in-left hover:text-primary-600" ><Link to={'successStory'}>Our Success Story</Link>
+        <li className="opacity-100 slide-in-left hover:text-primary-600" ><NavLink to={'successStory'}>Our Success Story</NavLink>
         </li>
 
-        <li className="opacity-100 slide-in-left hover:text-primary-600" ><Link to={'Profiles'}>Trainer's &nbsp;profile</Link>
+        <li className="opacity-100 slide-in-left hover:text-primary-600" ><NavLink to={'Profiles'}>Trainer's &nbsp;profile</NavLink>
         </li>
         
-        <li className="opacity-100 slide-in-left hover:text-primary-600" ><Link to={"aboutus"}>Contact Us</Link></li>
+        <li className="opacity-100 slide-in-left hover:text-primary-600" ><NavLink to={"aboutus"}>Contact Us</NavLink></li>
     </ul>
   
     </div>
