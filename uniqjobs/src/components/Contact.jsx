@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Contact = () => {
 
 const myStyle2 = {
@@ -31,7 +29,7 @@ const myStyle2 = {
               </div>
               <div className="mb-5 hidden sm:block">
                 <label htmlFor="Degree" className="mb-3 block text-base font-medium jakarta-bold text-[#07074D]">
-                  Highest Degree
+                  Highest Degree <span className="text-red-600">*</span>
                 </label>
                 <div className="relative">
                   <select name="Degree" id="Degree"
@@ -145,7 +143,7 @@ const myStyle2 = {
               </div>
               <div className="mb-5">
                 <label htmlFor="phone" className="mb-3 block text-base font-medium jakarta-bold text-[#07074D]">
-                  Graduation Year
+                  Graduation Year <span className="text-red-600">*</span>
                 </label>
                 <input type="number" name="phone" id="phone" placeholder="When did you complete your degree?"
                   className="w-full rounded-md border border-[#e0e0e0] bg-white font-secondary font-bold py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-red-600 focus:shadow-md" />

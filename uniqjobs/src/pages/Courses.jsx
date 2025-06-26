@@ -1622,11 +1622,11 @@ const Courses = () => {
           Java Fullstack Development (HARD)
         </p>
       </div>
-      <div className="relative bg-[#f2f2f2]">
+      <div className="relative bg-[#f2f2f2] ">
         <div className="relative overflow-hidden max-w-7xl mx-auto py-10">
-          <div className="absolute top-0 main-wave">
+          <div className="hidden lg:block absolute top-0 main-wave z-1">
             <svg
-              className="wave -z-9"
+              className="wave"
               width="100%"
               height="100%"
               viewBox="0 0 900 450"
@@ -1663,7 +1663,7 @@ const Courses = () => {
               />
             </svg>
           </div>
-          <div className="absolute top-9 left-0 border-b-4 border-b-[#0b090a]">
+          <div className="hidden lg:block absolute top-9 left-0 border-b-4 border-b-[#0b090a]">
             <svg
               width="64px"
               height="64px"
@@ -1689,7 +1689,7 @@ const Courses = () => {
               </g>
             </svg>
           </div>
-          <div className="absolute bottom-27 right-22.5">
+          <div className="hidden lg:block absolute bottom-27 right-22.5">
             <svg
               height="64px"
               width="64px"
@@ -1737,7 +1737,7 @@ const Courses = () => {
               </g>
             </svg>
           </div>
-          <div className="grid grid-cols-4 gap-y-6 lg:gap-y-18 px-35">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-y-6 lg:gap-y-18 px-4 sm:px-20 lg:px-35">
             {roadmapData.map((item, index) => (
               <RoadmapItem
                 key={index}
@@ -1769,7 +1769,7 @@ const Courses = () => {
       </div> */}
       <Faq items={moduleData} />
       <div className="flex items-center justify-center sm:justify-end px-4 sm:px-10 lg:px-20 pb-10 bg-white">
-        <DownloadSyllabus />
+        {/* <DownloadSyllabus /> */}
       </div>
     </div>
   );

@@ -3,25 +3,25 @@ import React, { useState, useEffect, useRef } from 'react';
 const slidesData = [
   {
     id: 1,
-    src: 'https://www.youtube.com/embed/OSFG4H2ujAU?mute=1',
+    src: 'https://www.youtube.com/embed/1_SViwgkAKI?mute=1',
     title: 'High-Paying IT Jobs for Freshers',
     description: 'Discover top IT roles and how freshers can land them.'
   },
   {
     id: 2,
-    src: 'https://www.youtube.com/embed/pQk54UpbbUs?mute=1',
+    src: 'https://www.youtube.com/embed/s0hun1-ZmBQ?mute=1',
     title: 'Internship + Job Placement for 2025 Freshers',
     description: 'Secure IT placements right after internship training.'
   },
   {
     id: 3,
-    src: 'https://www.youtube.com/embed/PxzpaRVMRAg?mute=1',
+    src: 'https://www.youtube.com/embed/DOX-zabbgto?mute=1',
     title: 'Warning for Freshers: Avoid This Mistake',
     description: "Be careful Freshers, Don't Learn this Course."
   },
   {
     id: 4,
-    src: 'https://www.youtube.com/embed/OSFG4H2ujAU?mute=1',
+    src: 'https://www.youtube.com/embed/LMHKiO6v2J0?mute=1',
     title: 'High-Paying IT Jobs for Freshers',
     description: 'Discover top IT roles and how freshers can land them.'
   }
@@ -82,15 +82,15 @@ const Carousel = () => {
                 className="w-full md:w-1/3 flex-shrink-0 px-2 py-4"
               >
                 <div className="rounded-lg overflow-hidden shadow-md h-full">
-                  <div className="bg-gray-200 h-48 md:h-64 flex items-center justify-center">
-                    <iframe
-                      src={slide.src}
-                      title={slide.title}
-                      className="w-full h-full"
-                      allow="autoplay; encrypted-media"
-                      allowFullScreen
-                    />
-                  </div>
+                 <div className="relative w-full pb-[120.78%] bg-gray-200"> {/* 9:16 ratio = 16/9 * 100 = 177.78% */}
+  <iframe
+    src={slide.src}
+    title={slide.title}
+    className="absolute top-0 left-0 w-full h-full"
+    allow="autoplay; encrypted-media"
+    allowFullScreen
+  />
+</div>
                   <div className="p-4">
                     <h3 className="text-xl font-semibold">{slide.title}</h3>
                     <p className="text-gray-600 mt-2">{slide.description}</p>

@@ -17,20 +17,20 @@ const cards = [
           <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"  viewBox="0 0 64 64" enableBackground="new 0 0 64 64" xmlSpace="preserve" fill="url(#textGradient)"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path fill="url(#textGradient)" d="M32,0C18.745,0,8,10.745,8,24c0,5.678,2.502,10.671,5.271,15l17.097,24.156C30.743,63.686,31.352,64,32,64 s1.257-0.314,1.632-0.844L50.729,39C53.375,35.438,56,29.678,56,24C56,10.745,45.255,0,32,0z M48.087,39h-0.01L32,61L15.923,39 h-0.01C13.469,35.469,10,29.799,10,24c0-12.15,9.85-22,22-22s22,9.85,22,22C54,29.799,50.281,35.781,48.087,39z"></path> <path fill="#231F20" d="M32,14c-5.523,0-10,4.478-10,10s4.477,10,10,10s10-4.478,10-10S37.523,14,32,14z M32,32 c-4.418,0-8-3.582-8-8s3.582-8,8-8s8,3.582,8,8S36.418,32,32,32z"></path> <path fill="url(#textGradient)" d="M32,10c-7.732,0-14,6.268-14,14s6.268,14,14,14s14-6.268,14-14S39.732,10,32,10z M32,36 c-6.627,0-12-5.373-12-12s5.373-12,12-12s12,5.373,12,12S38.627,36,32,36z"></path> </g> </g></svg>
     )
   },
-  {
-    title: 'Online Placement',
-    subtitle: 'Virtual Training',
-    description:
-      'Learn from anywhere with live virtual classes. Ideal for candidates looking for flexibility without compromising on placement-focused training.',
-    points: [
-      'Join live online sessions from anywhere',
-      'Access recorded videos and study materials',
-      'Get personalized doubt clearing and progress tracking',
-      'Participate in virtual placement drives',
-    ],
-    svg :(
-      <svg className="pr-5"  viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" fill="url(#textGradient)"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#000000" d="M11.8 18.93a.817.817 0 0 1 .07-.128.712.712 0 0 0-.09.2.182.182 0 0 1 .02-.07zm.21-.316c.01-.01.02-.01.03-.02a.643.643 0 0 0-.08.09.178.178 0 0 1 .05-.07z"></path> <path fill="url(#textGradient)" d="M11.8 18.93a.817.817 0 0 1 .07-.128.712.712 0 0 0-.09.2.182.182 0 0 1 .02-.07zm.24-.336a.643.643 0 0 0-.08.09.178.178 0 0 1 .05-.07c.01-.014.02-.014.03-.02zM17 6.954a1 1 0 0 1-.616-.21 11.4 11.4 0 0 0-14.71-.05A1 1 0 0 1 .262 6.63a.988.988 0 0 1 .064-1.4c.074-.075 8.122-7.196 17.29-.05a.988.988 0 0 1 .17 1.394 1 1 0 0 1-.786.38zM11.642 12.674a1.026 1.026 0 0 1-1.41-.12A1.933 1.933 0 0 0 9 11.912a1.936 1.936 0 0 0-1.23.645 1.026 1.026 0 0 1-1.412.12.982.982 0 0 1-.13-1.388A4.058 4.058 0 0 1 9 9.926a4.063 4.063 0 0 1 2.772 1.36.983.983 0 0 1-.13 1.387z"></path> <path fill="url(#textGradient)0" d="M14.72 9.622a1 1 0 0 1-1.41.03A6.792 6.792 0 0 0 9 7.956a6.792 6.792 0 0 0-4.31 1.7 1 1 0 0 1-1.41-.03.99.99 0 0 1 .02-1.4A8.54 8.54 0 0 1 9 5.964a8.54 8.54 0 0 1 5.7 2.26.99.99 0 0 1 .02 1.398z"></path> <ellipse fill="url(#textGradient)" cx="9" cy="14.882" rx="1" ry=".991"></ellipse> </g></svg>    )
-  },
+  // {
+  //   title: 'Online Placement',
+  //   subtitle: 'Virtual Training',
+  //   description:
+  //     'Learn from anywhere with live virtual classes. Ideal for candidates looking for flexibility without compromising on placement-focused training.',
+  //   points: [
+  //     'Join live online sessions from anywhere',
+  //     'Access recorded videos and study materials',
+  //     'Get personalized doubt clearing and progress tracking',
+  //     'Participate in virtual placement drives',
+  //   ],
+  //   svg :(
+  //     <svg className="pr-5"  viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" fill="url(#textGradient)"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#000000" d="M11.8 18.93a.817.817 0 0 1 .07-.128.712.712 0 0 0-.09.2.182.182 0 0 1 .02-.07zm.21-.316c.01-.01.02-.01.03-.02a.643.643 0 0 0-.08.09.178.178 0 0 1 .05-.07z"></path> <path fill="url(#textGradient)" d="M11.8 18.93a.817.817 0 0 1 .07-.128.712.712 0 0 0-.09.2.182.182 0 0 1 .02-.07zm.24-.336a.643.643 0 0 0-.08.09.178.178 0 0 1 .05-.07c.01-.014.02-.014.03-.02zM17 6.954a1 1 0 0 1-.616-.21 11.4 11.4 0 0 0-14.71-.05A1 1 0 0 1 .262 6.63a.988.988 0 0 1 .064-1.4c.074-.075 8.122-7.196 17.29-.05a.988.988 0 0 1 .17 1.394 1 1 0 0 1-.786.38zM11.642 12.674a1.026 1.026 0 0 1-1.41-.12A1.933 1.933 0 0 0 9 11.912a1.936 1.936 0 0 0-1.23.645 1.026 1.026 0 0 1-1.412.12.982.982 0 0 1-.13-1.388A4.058 4.058 0 0 1 9 9.926a4.063 4.063 0 0 1 2.772 1.36.983.983 0 0 1-.13 1.387z"></path> <path fill="url(#textGradient)0" d="M14.72 9.622a1 1 0 0 1-1.41.03A6.792 6.792 0 0 0 9 7.956a6.792 6.792 0 0 0-4.31 1.7 1 1 0 0 1-1.41-.03.99.99 0 0 1 .02-1.4A8.54 8.54 0 0 1 9 5.964a8.54 8.54 0 0 1 5.7 2.26.99.99 0 0 1 .02 1.398z"></path> <ellipse fill="url(#textGradient)" cx="9" cy="14.882" rx="1" ry=".991"></ellipse> </g></svg>    )
+  // },
   {
     title: 'Direct Placement',
     subtitle: 'Placement Training',

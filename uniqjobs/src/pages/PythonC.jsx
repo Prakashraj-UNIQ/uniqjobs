@@ -640,18 +640,18 @@ const PythonC = () => {
           <BannerVideo videoId="mfoKzEuExYrQhSPf" imageUrl={img} />
         </div>
       </div>
-      <div className="bg-white py-4 text-center">
+      <div className="bg-[#f2f2f2] py-4 text-center">
         <h1 className="px-4 text-black text-3xl lg:text-5xl text-center fold-primary font-black">
           From Zero to{" "}
           <span className="text-red-600">Full Stack Hero with 120 Days</span>
         </h1>
-        <p className="font-primary font-medium text-xl text-gray-800 mt-4 ">
+        <p className="font-primary font-medium sm:text-xl text-gray-800 mt-4 ">
           Python Fullstack Development (HARD)
         </p>
       </div>
-      <div className="relative">
-        <div className="relative overflow-hidden px-20 py-10">
-          <div className="absolute -top-5 main-wave max-w-9xl mx-auto">
+      <div className="relative bg-[#f2f2f2] py-5">
+        <div className="relative overflow-hidden px-2 sm:px-10 lg:px-20 py-10">
+          <div className="hidden lg:block absolute -top-5 main-wave max-w-9xl mx-auto">
             <svg
               className="wave"
               width="100%"
@@ -690,7 +690,7 @@ const PythonC = () => {
               />
             </svg>
           </div>
-          <div className="absolute top-8.5 left-23 border-b-4 border-b-[#0b090a]">
+          <div className="hidden lg:block absolute top-8.5 left-23 border-b-4 border-b-[#0b090a]">
             <svg
               width="64px"
               height="64px"
@@ -716,7 +716,7 @@ const PythonC = () => {
               </g>
             </svg>
           </div>
-          <div className="absolute bottom-48 right-22.5">
+          <div className="hidden lg:block absolute bottom-48 right-22.5">
             <svg
               height="64px"
               width="64px"
@@ -764,7 +764,7 @@ const PythonC = () => {
               </g>
             </svg>
           </div>
-          <div className="grid grid-cols-3 space-y-25 max-w-9xl mx-auto ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 space-y-5 sm:space-y-25 max-w-9xl mx-auto ">
             {roadmapData.map((item, index) => (
               <RoadmapItem
                 key={index}
@@ -775,7 +775,7 @@ const PythonC = () => {
             ))}
           </div>
         </div>
-        <p className="absolute bottom-32 right-35 font-primary font-bold text-xl pt-4 text-center lg:text-end">
+        <p className="lg:absolute bottom-32 right-35 font-primary font-bold sm:text-xl sm:pt-4 text-center lg:text-end">
           Total: <span className="text-red-600">100</span> Days to{" "}
           <span className="text-red-600">130</span> Days
         </p>

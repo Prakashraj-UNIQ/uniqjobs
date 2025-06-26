@@ -12,6 +12,7 @@ import ProcessCard from "../components/ProcessCard";
 // import { Link } from "react-router-dom";
 import Banner from '../components/Banner'
 import CtaBanner from "../components/CtaBanner";
+import ShortVideoGrid from "../components/ShortVideoGrid";
 
 const Home = () => {
   const javaicon = (
@@ -304,27 +305,27 @@ const Home = () => {
         <h1 className="px-4 text-white text-3xl lg:text-5xl text-center fold-primary font-black">
           How Can <span className="text-red-600">We Help You?</span>
         </h1>
+        
       </div>
       <Carosoul />
       <Pricing />
-      <div className="bg-[#F2F2F2] pt-8 text-center">
-        <h1 className="px-4 sm:px-10 lg:px-20 text-black text-3xl lg:text-5xl text-center fold-primary font-black">
+      <div className="bg-black py-18 text-center">
+        {/* <h1 className="px-4 sm:px-10 lg:px-20 text-white text-3xl lg:text-5xl text-center fold-primary font-black">
           Are you a Fresher and{" "}
           <span className="text-red-600">Confused about where to start???</span>
+        </h1> */}
+         <h1 className="px-4 text-white text-3xl lg:text-5xl text-center fold-primary font-black">
+          Our Student's <span className="text-red-600">Success Stories</span>
         </h1>
-        <p className="mx-auto px-4 mt-4 max-w-5xl text-gray-800 text-center font-secondary text-lg">
+        {/* <p className="mx-auto px-4 mt-4 max-w-5xl text-white/85 text-center font-secondary text-lg">
           Wish to pursue ur Career in IT ??? These 3 must-watch videos will
           clear your doubts, guide your path, and show you how to land your
           dream job faster and smarter.
-        </p>
+        </p> */}
       </div>
-      <Videogrid />
-      <div className="pt-10 text-center bg-black">
-        <h1 className="px-4 text-white text-4xl lg:text-5xl text-center fold-primary font-black">
-          Key Features of<span className="text-red-600"> Training Program</span>
-        </h1>
-      </div>
-      <FeatureCard />
+      {/* <Videogrid /> */}
+      <ShortVideoGrid/>
+      
       <div className=" py-4 text-center bg-[#F2F2F2]">
         <h1 className="px-4 text-black text-3xl lg:text-5xl text-center fold-primary font-black">
           Our Student's <span className="text-red-600">Success Stories</span>
@@ -336,6 +337,12 @@ const Home = () => {
         </p>
       </div>
       <FresherGrid />
+      <div className="pt-10 text-center bg-black">
+        <h1 className="px-4 text-white text-4xl lg:text-5xl text-center fold-primary font-black">
+          Key Features of<span className="text-red-600"> Training Program</span>
+        </h1>
+      </div>
+      <FeatureCard />
       <Contact />
     </>
   );

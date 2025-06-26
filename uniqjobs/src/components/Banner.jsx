@@ -1,5 +1,5 @@
 import React from "react";
-import mainbg from "../assets/images/cta-cover4.jpg";
+import mainbg from "../assets/images/classrooms/class2.webp";
 import CountUpBox from "./CountUpBox";
 import { Link } from "react-router-dom";
 // import BannerLeft from "./Courses/BannerLeft";

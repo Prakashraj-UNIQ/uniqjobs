@@ -224,7 +224,7 @@ const DotnetC = () => {
           <BannerVideo videoId="xZjnLNcNLzU" imageUrl={img} />
         </div>
       </div>
-      <div className="bg-white py-4 text-center">
+      <div className="bg-[#f2f2f2] py-4 text-center">
         <h1 className="px-4 text-black text-3xl lg:text-5xl text-center fold-primary font-black">
           From Zero to{" "}
           <span className="text-red-600">Full Stack Hero with 120 Days</span>
@@ -233,9 +233,9 @@ const DotnetC = () => {
           DotNet Fullstack Development (HARD)
         </p>
       </div>
-      <div className="relative">
-        <div className="relative overflow-hidden px-20 py-10">
-          <div className="absolute -top-5 main-wave">
+      <div className="relative bg-[#f2f2f2] py-5">
+        <div className="relative overflow-hidden sm:px-20 py-10">
+          <div className="hidden lg:block absolute -top-5 main-wave">
             <svg
               className="wave"
               width="100%"
@@ -272,7 +272,7 @@ const DotnetC = () => {
               />
             </svg>
           </div>
-          <div className="absolute top-8.5 left-23 border-b-4 border-b-[#0b090a]">
+          <div className="hidden lg:block absolute top-8.5 left-23 border-b-4 border-b-[#0b090a]">
             <svg
               width="64px"
               height="64px"
@@ -298,7 +298,7 @@ const DotnetC = () => {
               </g>
             </svg>
           </div>
-          <div className="absolute bottom-50 right-22.5">
+          <div className="hidden lg:block absolute bottom-50 right-22.5">
             <svg
               height="64px"
               width="64px"
@@ -346,7 +346,7 @@ const DotnetC = () => {
               </g>
             </svg>
           </div>
-          <div className="grid grid-cols-5 space-y-25 px-35">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 space-y-5 sm:space-y-25 px-2 sm:px-10 lg:px-35">
             {roadmapData.map((item, index) => (
               <RoadmapItem
                 key={index}
@@ -357,16 +357,16 @@ const DotnetC = () => {
             ))}
           </div>
         </div>
-        <p className="absolute bottom-15 right-35 font-primary font-bold text-xl pt-4 text-center lg:text-end">
+        <p className="lg:absolute bottom-15 right-35 font-primary font-bold text-xl pt-4 text-center lg:text-end">
           Total: <span className="text-red-600">100</span> Days to{" "}
           <span className="text-red-600">130</span> Days
         </p>
       </div>
   
       
-      <div className="flex items-center justify-center sm:justify-end px-4 sm:px-10 lg:px-20 pb-10 bg-white">
+      {/* <div className="flex items-center justify-center sm:justify-end px-4 sm:px-10 lg:px-20 pb-10 bg-white">
         <DownloadSyllabus />
-      </div>
+      </div> */}
     </div>
   );
 };

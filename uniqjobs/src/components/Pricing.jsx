@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const uniqLines = [
-  "If you don't have laptop we will give you rental laptop",
-  "Minimum 3.5–8 Hour Sessions",
-  "Communication class is mandatory",
-  "Daily English 2 Min Voice Notes",
-  "Tickora Facial Attendance System",
-  "Train Until You’re Placed",
+  "Rental laptops provided for uninterrupted learning",
+  "Comprehensive 3.5–8 hour daily sessions",
+  "Mandatory communication skills development",
+  "Daily 2-minute English speaking practice",
+  "Facial recognition-based attendance tracking",
+  "Training continues until you're successfully placed",
 ];
 
 // const uniqSubtexts = [
@@ -19,12 +19,12 @@ const uniqLines = [
 // ];
 
 const otherLines = [
-  "Laptop optional",
-  "Just 1-hour classes",
-  "Communication class is not mandatory",
-  "No practice, no pressure, no progress",
-  "No attendance, no tracking",
-  "Fixed-duration courses — placed or not",
+  "Laptops not provided or optional",
+  "Only 1-hour short sessions",
+  "Communication training not prioritized",
+  "Lack of speaking practice and skill reinforcement",
+  "No system for attendance or progress tracking",
+  "Fixed course duration with no placement guarantee",
 ];
 
 // const otherSubtexts = [
